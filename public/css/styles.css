@@ -1,41 +1,157 @@
 *{
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
 body{
-    background-color: #EAC926;  
     font-family: 'Roboto', sans-serif; 
+    background-color: #ebebeb;     
+}
+header{
+    background-color: #eac926;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+ }
+.logo{
+    width: 50%;
+    margin: 8px;
 }
 p{
     font-size: 12px;
-    font-weight: bold;
 }
 
-
-.titulares{
+h3{
     font-size: 24px;
 }
+div.search-container{
+    display: flex;
+}
 
-.precio{
+.price{
     font-size: 18px;
 }
-.descuento{
+.discount,
+.description{
     font-size: 16px;
+    font-weight: normal;
 }
-.descripcion{
-    font-size: 16px;
+h3, .description{
+    color: #666;
 }
 
-.burger-menu{
-    background-color: #1259c3;
-    color:white;
-    text-align: center;
-    width: 25px;
-    height: 20px;
-    margin-left: 50%;
+.description{
+    display: none;
+    margin-top: 20px;
 }
-#textocuotas{
+section.banner img{
+    width: 100%;
+}
+
+
+header div.logo{
+    width: 50%;
+    padding: 10px;
+ }
+
+
+ header nav{
+    font-size: 12px;
+ }
+ .menu-nav{
+    margin: 10px;
+ }
+
+
+ div.top-header{
+    padding: 5%;
+ }
+
+ header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+ 
+
+
+  header div.top-header p{
+    width: 100%;
     text-align: center;
+    margin-top: 10px;
+  }
+main{
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    background-color: #ebebeb;
+}
+
+
+div.burger-menu i{
+    background-color: #0044AA;
+    color:white;
+    width: 40px;
+    font-size: 20px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 10px 0px 20px 0px ;
+    padding: 10px;
+
+}
+div.burger-menu{
+    text-align: center;
+}
+
+
+main section article{
+    background-color: #fff;
+    margin: 10px  0;
+    padding: 1em;
+}
+main section article img{
+    width: 100%;
+}
+main section article i, .discount{
+    color: #39b54a;
+}
+main section h3{
+    margin: 20px 0px;
+}
+article div.main-article{
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+
+.article-wrap-description{
+    display: flex;
+    justify-content: center;
+}
+.article-wrap-description .price {
+    flex-grow: 0.3;
+}
+.article-wrap-description .discount{
+    flex-grow: 0.7;
+}
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a ;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px ;
+    top: -15px ;
 }
 
 footer{
@@ -53,7 +169,96 @@ footer{
 .copyrigth{
     text-align: left;
 }
+.products{
+    display: flex;
+
+}
+.products{
+    justify-content: space-between;
+}
+
+
+
+
+@media (max-width: 360px){
+    
+    
+    main section article .description,
+    .menu-nav{
+        display: none;
+    
+    }
+    .products{
+        flex-direction: column;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+    }
+    
+}
+@media (min-width: 361px) {
+    .form-register {
+        background-color: #ebebeb;
+        padding: 5px;
+        
+    }
+    
+    main section article{
+    box-shadow: 0px 0px 10px rgb(82, 82, 82);
+    }
 
 
     
+    div.burger-menu{
+        display: none;
+
+    }
+    main section article .description, .menu-nav{
+        display: flex;
+
+
+    }
+    .menu-nav{
+        justify-content: space-between;
+    }
+    .products{
+        flex-wrap: wrap;
+    }
+    .product{
+        width: 45%;
+
+    }
+    .site-bar, .login-bar{
+        display: flex;
+
+        
     
+    }
+    div.search-container{
+        margin-left: 10px;
+
+    }
+    header div.top-header p{
+        text-align: right;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+    div.top-header{
+        display: flex;
+        align-items: center;
+
+    }
+    header ul li{
+        margin: 10px;
+    }
+}
+@media (min-width: 768px){
+    .product{
+        width: 22%;
+    }
+}
