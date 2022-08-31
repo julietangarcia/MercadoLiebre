@@ -75,12 +75,12 @@
 
             <p><input type="text" name="usuario" placeholder="Nombre de usuario"></p>
   
-            <p><input type="email" name="email" placeholder="E-mail"></p>
+            <p><input type="email" name="email" required placeholder="E-mail"></p>
     
             <h4><label>Fecha de nacimiento</label></h4>
-            <p><input type="fecha" name="fecha" value="yyyy-mm-dd"></p>
+            <p><input type="fecha" name="fecha" required value="yyyy-mm-dd"></p>
 
-            <input type="text" name="domicilio" placeholder="Domicilio">
+            <input type="text" name="domicilio" minlength="2" required placeholder="Domicilio">
 
             <h4>Perfil de usuario</label></h4>
             <p>
@@ -99,11 +99,14 @@
             <h4><label for="photo">Foto de perfil</label></h4>
             <input type="file" name="photo" accept=".jpg">
 
-            <p><input type="password" name="password" placeholder="Contraseña" autocomplete="off"></p>
-            <p><input type="password" name="password" placeholder="Confirmar contraseña" autocomplete="false"></p>
+            <p><input type="password" name="password" placeholder="Contraseña" required autocomplete="off"></p>
+            <p><input type="password" name="password" placeholder="Confirmar contraseña" required autocomplete="false"></p>
 
-            <div>
-                <button class="enviar" type="submit">Enviar</button>
+            <div class="botones">
+
+                <button class="enviar" type="submit" onclick="home.html">Enviar</button>
+
+                
 
                 <button class="reset" type="reset">Borrar</button>
             </div>
@@ -111,40 +114,42 @@
             </div>
         </main>
         <footer>
-            <article>
-              <p class="iconfooter">
-                <i class="fas fa-credit-card"></i>
-              </p>
-              <h4>Pagá con tarjeta o en efectivo</h4>
-              <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o
-                efectivo en puntos de pago.¡Y siempre es seguro!
-              </p>
-            </article>
-      
-            <article>
-              <p class="iconfooter">
-                <i class="fas fa-gift"></i>
-              </p>
-              <h4>Envío gratis desde $ 2.500</h4>
-              <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en
-                miles de productos. Es un beneficio de Mercado Puntos.
-              </p>
-            </article>
-            <article>
-              <p class="iconfooter">
-                <i class="fas fa-user-shield"></i>
-              </p>
-              <h4>Seguridad de principio a fin</h4>
-              <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas
-                hacer, porque estás siempre protegid@.
-              </p>
-            </article>
-            <article>
-              <br>
-      
-              <h6 class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</h6>
-      
-            </article>
+          <div class="conteiner-footer">
+          <article class="pay">
+            <p class="iconfooter">
+              <i class="fas fa-credit-card"></i>
+            </p>
+            <h4>Pagá con tarjeta o en efectivo</h4>
+            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o
+              efectivo en puntos de pago.¡Y siempre es seguro!
+            </p>
+          </article>
+    
+          <article class="ship">
+            <p class="iconfooter">
+              <i class="fas fa-gift"></i>
+            </p>
+            <h4>Envío gratis desde $ 2.500</h4>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en
+              miles de productos. Es un beneficio de Mercado Puntos.
+            </p>
+          </article>
+          <article class="security">
+            <p class="iconfooter">
+              <i class="fas fa-user-shield"></i>
+            </p>
+            <h4>Seguridad de principio a fin</h4>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas
+              hacer, porque estás siempre protegid@.
+            </p>
+          </article>
+        </div>
+          <article>
+            <br>
+    
+            <h6 class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</h6>
+    
+          </article>
         </footer>
-    </body>
-</html>
+      </body>
+    </html>
